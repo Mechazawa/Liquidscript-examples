@@ -9,7 +9,7 @@ class Game-of-life {
     tick-length: 100
     canvas: null
     drawing-context: null
-    running: true
+    running: false
 
     initialize: -> {
         this.create-canvas()

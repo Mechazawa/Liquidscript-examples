@@ -12,7 +12,7 @@ GameOfLife.prototype.seedProbability = 0.4;
 GameOfLife.prototype.tickLength = 100;
 GameOfLife.prototype.canvas = null;
 GameOfLife.prototype.drawingContext = null;
-GameOfLife.prototype.running = true;
+GameOfLife.prototype.running = false;
 GameOfLife.prototype.initialize = function() {
   this.createCanvas();
   this.resizeCanvas();
