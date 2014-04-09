@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head> 
+	<title>Mandelbrot in liquidscript</title> 
+	<script src="mandelbrot.js"></script> 
+</head> 
+<body style="margin:0px;padding:0px;"> 
+	<canvas id="mandelbrot" width="500" height="300"></canvas> 
+	<script>
+	//Start drawing once the document has finished loading to
+	// prevent weird stuff from happening.
+	document.onreadystatechange = function () {
+		if (document.readyState == 'complete') 
+			mandelbrot(document.getElementById('mandelbrot'), 100);
+	}
+	</script>
+</body>
+</html>
