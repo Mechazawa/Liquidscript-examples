@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title>Game of Life</title>
+
+  <script type="text/javascript" src="game_of_life.js">
+  </script>
+
+  <style type="text/css">
+    body {
+      background-color: rgb(38, 38, 38);
+    }
+
+    canvas {
+      border: 1px solid rgba(242, 198, 65, 0.1);
+      margin: 50px auto 0 auto;
+      display: block;
+    }
+
+    #controls {
+      margin: 10px auto 0 auto;
+      text-align: center;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <script type="text/javascript">
+    gol = new GameOfLife();
+    gol.seed();
+    gol.start();
+
+    function q(event) {
+      event = event || window.event;
+      
+      var canvas = document.getElementById('canvas'),
+          x = event.pageX - canvas.offsetLeft,
+          y = event.pageY - canvas.offsetTop;
+      
+      alert(x + ' ' + y);
+  }
+  </script>
+  <div id="controls">
+    <button onclick="gol.start()">start</button>
+    <button onclick="gol.stop()">stop</button>
+    <button onclick="gol.seed()">seed</button>
+  </div>
+</body>
+</html>
