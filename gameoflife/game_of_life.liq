@@ -19,6 +19,9 @@ class Game-of-life {
     }
 
     start: -> {
+        if(this.running) {
+            return null
+        }
         this.running = true
         this.tick()
     }
