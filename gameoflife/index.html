@@ -25,16 +25,6 @@
     gol = new GameOfLife();
     gol.seed();
     gol.start();
-
-    function q(event) {
-      event = event || window.event;
-      
-      var canvas = document.getElementById('canvas'),
-          x = event.pageX - canvas.offsetLeft,
-          y = event.pageY - canvas.offsetTop;
-      
-      alert(x + ' ' + y);
-  }
   </script>
   <div id="controls">
     <button onclick="gol.start()">start</button>
