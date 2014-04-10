@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Snake in Liquidscript</title>
+  <!-- Liquid snake *badum tsss* -->
+  <script type="text/javascript" src="snake.js"></script>
+  <style type="text/css">
+    body {
+      background-color: rgb(38, 38, 38);
+    }
+
+    canvas {
+      border: 1px solid rgba(242, 198, 65, 0.1);
+      margin: 50px auto 0 auto;
+      display: block;
+    }
+
+    #controls {
+      margin: 10px auto 0 auto;
+      text-align: center;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <script type="text/javascript">
+  CurrentKey = 0;
+  window.addEventListener('keydown',function(evt){
+      CurrentKey = evt.keyCode
+  },true);
+  snake = new Snake(15, 15);
+  setInterval(function(){snake.tick()}, 300)
+  </script>
+</body>
+</html>
