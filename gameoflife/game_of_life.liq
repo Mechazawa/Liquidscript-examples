@@ -140,15 +140,12 @@ class GameOfLife {
 
         number-of-alive-neighbors = this.count-alive-neighbors(cell)
 
-        #elseif was not implemented upon writing this
         evolved-cell.is-alive = false
         if(cell.is-alive and number-of-alive-neighbors == 2){
             evolved-cell.is-alive = true
-        } 
-        if(cell.is-alive and number-of-alive-neighbors == 3){
+        } elsif(cell.is-alive and number-of-alive-neighbors == 3){
             evolved-cell.is-alive = true
-        } 
-        if(cell.is-alive == false and number-of-alive-neighbors == 3){
+        } elsif(cell.is-alive == false and number-of-alive-neighbors == 3){
             evolved-cell.is-alive = true
         } 
 
