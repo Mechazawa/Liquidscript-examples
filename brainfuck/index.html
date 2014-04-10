@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Brainfuck interpeter in Liquidscript</title>
+    <script type="text/javascript" src="brainfuck.js"></script>
+    <style type="text/css">
+    body {
+        background-color: rgb(38, 38, 38);
+    }
+
+    .content {
+        margin: 50px auto 0 auto;
+        display: block;
+        text-align: center;
+    }
+
+    button {
+        width: 224px;
+    }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div>
+            <textarea id="input" rows="30" cols="30">++++++++[&gt;++++[&gt;++&gt;+++&gt;+++&gt;+&lt;&lt;&lt;&lt;-]&gt;+&gt;+&gt;-&gt;&gt;+[&lt;]&lt;-]&gt;&gt;.&gt;---.+++++++..+++.&gt;&gt;.&lt;-.&lt;.+++.------.--------.&gt;&gt;+.&gt;++.</textarea>
+            <textarea id="output" readonly="true" rows="30" cols="30"></textarea>
+        </div>
+        <button onclick="runCode()">Run</button>
+    </div>
+</body>
+</html>
