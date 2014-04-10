@@ -1,7 +1,7 @@
 #! allow Math document window setTimeout Date
 # inspired by http://www.ibm.com/developerworks/web/library/wa-coffeescriptcanvas/index.html?ca=dat
 
-class Game-of-life {
+class GameOfLife {
     current-cell-generation: null
     cell-size: 7
     number-of-rows: 50
