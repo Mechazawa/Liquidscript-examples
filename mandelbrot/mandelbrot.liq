@@ -20,7 +20,7 @@ class Complex {
         return Math.sqrt(this.x*this.x+this.y*this.y)
     negative: ->
         return new Complex(-this.x, -this.y)
-    to-atring: ->
+    to-string: ->
         return "{#{this.x},#{this.y}}"
     value-of: ->
         return this.x
