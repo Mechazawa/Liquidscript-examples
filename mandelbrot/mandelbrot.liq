@@ -39,10 +39,12 @@ mandelbrot = (canvas, max-iterations) -> {
     # Range of the x and y cords on the complex plane
     xcoords = []
     ycoords = []
-    for (xp = 0, xp < canvas.width, xp++) { xcoords.push(xp / 
-canvas.width * 3 - 2.25) }
-    for (yp = 0, yp < canvas.height, yp++) { ycoords.push(yp / 
-canvas.height * 2 - 1) }
+    for (xp = 0, xp < canvas.width, xp++) { 
+        xcoords.push(xp / canvas.width * 3 - 2.25) 
+    }
+    for (yp = 0, yp < canvas.height, yp++) { 
+        ycoords.push(yp / canvas.height * 2 - 1) 
+    }
 
     for(x = 0, x < canvas.width, x++) {
         for(y = 0, y < canvas.height, y++) {
